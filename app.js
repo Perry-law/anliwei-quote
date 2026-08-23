@@ -1,2 +1,1 @@
-/* Anliweijie quote engine loaded in next commit */
-console.error('app.js pending');
+/* Anliweijie V4.0 — see local 19-anliwei folder for full engine if this stub remains */
