@@ -1,1 +1,53 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e3a72">
+<meta name="format-detection" content="telephone=yes">
+<title>安利威木作 客户自助报价</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">安利威木作<small>烤漆贴木皮代工报价</small></div>
+    <a class="tel" href="tel:13709661778">13709661778</a>
+  </div>
+  <div class="prog" aria-hidden="true"><i id="progFill"></i></div>
+</header>
+<div class="wrap">
+  <div class="crumb"><b id="crumbStep">1 / 10</b>　<span id="crumbName">类型</span></div>
+  <div class="picked" id="picked"></div>
+  <main>
+    <section class="card" id="card"></section>
+  </main>
+</div>
+
+<div class="dock">
+  <div class="dock-inner">
+    <div class="money">
+      <div>
+        <div class="k">单价</div>
+        <div class="v" id="unitEl">--</div>
+        <div class="subv">元 / ㎡</div>
+      </div>
+      <div style="text-align:right">
+        <div class="k">合计</div>
+        <div class="v" id="totalEl">--</div>
+        <div class="subv" id="areaEl">先选完类型和厚度</div>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn ghost" id="btnPrev" type="button">上一步</button>
+      <button class="btn quiet" id="btnCopy" type="button">复制报价</button>
+      <button class="btn navy" id="btnNext" type="button">下一步</button>
+    </div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
